@@ -1,0 +1,28 @@
+/* ssvg.scss */
+
+@import 'mixins';
+
+html,
+body {
+    font: 100% sans-serif, Helvetica;
+    color: #a7a7a7;
+    .ssvg-icon-container {
+        width: 250px;
+    }
+    .ssvg-container {
+        position: relative;
+        left: 250px;
+        .ssvg-canvas {
+            @extend .dotted;
+            height: 750px;
+            width: 1250px;
+        }
+    }
+}
+
+.dotted {
+  background-image: url("../images/dot.gif");
+  background-repeat: repeat;
+}
+
+@import 'ruler';
